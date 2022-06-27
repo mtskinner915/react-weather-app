@@ -1,0 +1,50 @@
+.Weather h2 {
+  color: white;
+  padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+.Weather li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.Weather li:first-letter {
+  text-transform: capitalize;
+}
+.Weather .day-time {
+  color: #45a6f5;
+  font-size: 12pt;
+  font-style: italic;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+.Weather .Degree {
+  font-size: 34pt;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  position: relative;
+  top: -20px;
+}
+.Weather .Units {
+  color: white;
+  position: relative;
+  bottom: 40px;
+  font-family: "Poppins", sans-serif;
+}
+.Container {
+  column-count: 2;
+}
+.Weather .Weather-details {
+  color: white;
+  font-size: 20px;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+.weather-details {
+  color: white;
+  font-size: 20px;
+}
