@@ -18,7 +18,7 @@ function App() {
         <div className="App-link">
           <a
             className="Git-link"
-            href="https://incomparable-seahorse-746089.netlify.app"
+            href="https://github.com/mtskinner915/react-weather-app"
             target="_blank"
             rel="noopener noreferrer"
           >
