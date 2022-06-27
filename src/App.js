@@ -18,7 +18,7 @@ function App() {
         <div className="App-link">
           <a
             className="Git-link"
-            href="https://reactjs.org"
+            href="https://incomparable-seahorse-746089.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
           >
