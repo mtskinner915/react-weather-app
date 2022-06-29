@@ -8,6 +8,7 @@ export default function Form() {
         name="search-city"
         placeholder="Search for city..."
         className="Form"
+        autoFocus="on"
       />
       <input type="submit" value="Search" className="Button" />
     </form>
