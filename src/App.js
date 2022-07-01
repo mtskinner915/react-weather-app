@@ -1,7 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
-import Form from "./Form";
-import "./Form.css";
 import Weather from "./Weather";
 import "./Weather.css";
 
@@ -12,7 +10,6 @@ function App() {
         <h1>WEATHER</h1>
         <div className="Weather-app-wrapper">
           <div className="Weather-app">
-            <Form />
             <Weather defaultCity="New York" />
           </div>
         </div>
