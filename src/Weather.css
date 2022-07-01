@@ -22,21 +22,29 @@
   font-style: italic;
   list-style: none;
   font-family: "Poppins", sans-serif;
+  padding: 5px 0px 5px 0px;
+}
+.Weather .Weather-image {
+  float: left;
+  position: relative;
+  left: -45px;
 }
 .Weather .Degree {
   font-size: 34pt;
   font-family: "Poppins", sans-serif;
   color: white;
   position: relative;
-  top: -20px;
+  top: 3px;
+  left: -30px;
 }
 .Weather .Units {
   color: white;
   position: relative;
-  bottom: 40px;
+  bottom: 15px;
+  left: -40px;
   font-family: "Poppins", sans-serif;
 }
-.Container {
+.container {
   column-count: 2;
 }
 .Weather .Weather-details {

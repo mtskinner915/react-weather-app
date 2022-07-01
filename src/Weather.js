@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "bootstrap/dist/css/bootstrap.css";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -8,12 +8,12 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       city: response.data.name,
-      date: "Monday 10:23",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       imgUrl: "http://openweathermap.org/img/wn/01d@2x.png",
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
-      temperature: response.data.msin.temp,
+      temperature: response.data.main.temp,
     });
   }
   if (weatherData.ready) {
@@ -21,16 +21,18 @@ export default function Weather(props) {
       <div className="Weather">
         <h2>{weatherData.city}</h2>
         <ul>
-          <li className="day-time">Last updated: {weatherData.date}</li>
+          <li className="day-time">
+            Last updated: <FormattedDate date={weatherData.date} />
+          </li>
         </ul>
-        <div className="Container">
+        <div className="container">
           <div className="row">
             <div className="column">
               <img
                 src={weatherData.imgUrl}
                 alt="sunny"
                 width="70px"
-                className="float-left"
+                className="Weather-image"
               />
               <span className="Degree">
                 {Math.round(weatherData.temperature)}{" "}
@@ -43,7 +45,7 @@ export default function Weather(props) {
                   Condition: {weatherData.description}
                 </li>
                 <li>Humidity: {weatherData.humidity}%</li>
-                <li>Wind: {weatherData.wind}m/h</li>
+                <li>Wind: {Math.round(weatherData.wind)}m/h</li>
               </ul>
             </div>
           </div>
